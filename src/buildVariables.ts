@@ -362,7 +362,7 @@ const buildCreateVariables = (introspectionResults: IntrospectionResult) => (
           data: {
             ...acc.data,
             [fieldName]: {
-              [PRISMA_CONNECT]: params.data[`${key}Ids`].map((id: string) => ({
+              [PRISMA_CONNECT]: params.data[key].map((id: string) => ({
                 id
               }))
             }
